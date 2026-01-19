@@ -105,6 +105,50 @@
         "https://www.w3.org/TR/did-rubric#criteria-35",
         "https://www.w3.org/TR/did-rubric#criteria-36"
       ]
+    },
+    {
+      "name": "DID Traits",
+      "description": "",
+      "criteria": [
+        "https://www.w3.org/TR/did-rubric#criteria-65",
+        "https://www.w3.org/TR/did-rubric#criteria-66",
+        "https://www.w3.org/TR/did-rubric#criteria-67",
+        "https://www.w3.org/TR/did-rubric#criteria-68",
+        "https://www.w3.org/TR/did-rubric#criteria-69",
+        "https://www.w3.org/TR/did-rubric#criteria-70",
+        "https://www.w3.org/TR/did-rubric#criteria-71",
+        "https://www.w3.org/TR/did-rubric#criteria-72",
+        "https://www.w3.org/TR/did-rubric#criteria-73",
+        "https://www.w3.org/TR/did-rubric#criteria-74",
+        "https://www.w3.org/TR/did-rubric#criteria-75",
+        "https://www.w3.org/TR/did-rubric#criteria-76",
+        "https://www.w3.org/TR/did-rubric#criteria-77",
+        "https://www.w3.org/TR/did-rubric#criteria-78",
+        "https://www.w3.org/TR/did-rubric#criteria-79",
+        "https://www.w3.org/TR/did-rubric#criteria-80",
+        "https://www.w3.org/TR/did-rubric#criteria-81",
+        "https://www.w3.org/TR/did-rubric#criteria-82",
+        "https://www.w3.org/TR/did-rubric#criteria-83",
+        "https://www.w3.org/TR/did-rubric#criteria-84",
+        "https://www.w3.org/TR/did-rubric#criteria-85",
+        "https://www.w3.org/TR/did-rubric#criteria-86",
+        "https://www.w3.org/TR/did-rubric#criteria-87",
+        "https://www.w3.org/TR/did-rubric#criteria-88",
+        "https://www.w3.org/TR/did-rubric#criteria-89",
+        "https://www.w3.org/TR/did-rubric#criteria-90",
+        "https://www.w3.org/TR/did-rubric#criteria-91",
+        "https://www.w3.org/TR/did-rubric#criteria-92",
+        "https://www.w3.org/TR/did-rubric#criteria-93",
+        "https://www.w3.org/TR/did-rubric#criteria-94",
+        "https://www.w3.org/TR/did-rubric#criteria-95",
+        "https://www.w3.org/TR/did-rubric#criteria-96",
+        "https://www.w3.org/TR/did-rubric#criteria-97",
+        "https://www.w3.org/TR/did-rubric#criteria-98",
+        "https://www.w3.org/TR/did-rubric#criteria-99",
+        "https://www.w3.org/TR/did-rubric#criteria-100",
+        "https://www.w3.org/TR/did-rubric#criteria-101",
+        "https://www.w3.org/TR/did-rubric#criteria-102"
+      ]
     }
   ]
 }

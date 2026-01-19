@@ -1,0 +1,101 @@
+{
+  "name": "Pre-rotation of Keys",
+  "id": "https://www.w3.org/TR/did-rubric#criteria-72",
+  "version": "1.0.0",
+  "source": "https://identity.foundation/did-traits/v1.0.0/",
+  "question": {
+    "question": "Does the DID method support the  pre-rotation of keys?",
+    "instruction": ""
+  },
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "Yes",
+        "meaning": "The DID method supports this trait."
+      },
+      {
+        "label": "No",
+        "meaning": "The DID method does not support this trait."
+      }
+    ]
+  },
+  "relevance": "A DID method that supports Cryptographic mechanisms that enables a DID controller to securely commit to a future key rotation without revealing the actual replacement public key. This technique creates a verifiable, one-way commitment to the next cryptographic key pair, preventing malicious actors who compromise the current private key from arbitrarily rotating to a new key of their choosing.",
+  "assessmentTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "type": "method",
+        "propertyRef": "method"
+      },
+      {
+        "heading": "Trait",
+        "type": "boolean",
+        "propertyRef": "trait"
+      },
+      {
+        "heading": "Notes",
+        "type": "note",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "exampleAssessments": [
+    {
+      "id": "",
+      "method": "cheqd",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "iden3",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "key",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "peer",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "web",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webplus",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webs",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webvh",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    }
+  ]
+}

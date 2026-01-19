@@ -1,0 +1,101 @@
+{
+  "name": "ECDSA, curve secp384r1",
+  "id": "https://www.w3.org/TR/did-rubric#criteria-93",
+  "version": "1.0.0",
+  "source": "https://identity.foundation/did-traits/v1.0.0/",
+  "question": {
+    "question": "Does the DID method support ECDSA cryptography over the secp384r1 curve?",
+    "instruction": ""
+  },
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "Yes",
+        "meaning": "The DID method supports this trait."
+      },
+      {
+        "label": "No",
+        "meaning": "The DID method does not support this trait."
+      }
+    ]
+  },
+  "relevance": "A DID method that supports this cryptographic algorithm, which has been verified by any of the government entities mentioned in appendix National Cryptographic Standards Bodies.",
+  "assessmentTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "type": "method",
+        "propertyRef": "method"
+      },
+      {
+        "heading": "Trait",
+        "type": "boolean",
+        "propertyRef": "trait"
+      },
+      {
+        "heading": "Notes",
+        "type": "note",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "exampleAssessments": [
+    {
+      "id": "",
+      "method": "cheqd",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "iden3",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "key",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "peer",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "web",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webplus",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webs",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webvh",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    }
+  ]
+}

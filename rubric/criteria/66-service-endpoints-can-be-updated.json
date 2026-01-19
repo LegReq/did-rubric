@@ -1,0 +1,101 @@
+{
+  "name": "Service Endpoints can be updated",
+  "id": "https://www.w3.org/TR/did-rubric#criteria-66",
+  "version": "1.0.0",
+  "source": "https://identity.foundation/did-traits/v1.0.0/",
+  "question": {
+    "question": "Does the DID method support updatable service endpoints?",
+    "instruction": ""
+  },
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "Yes",
+        "meaning": "The DID method supports this trait."
+      },
+      {
+        "label": "No",
+        "meaning": "The DID method does not support this trait."
+      }
+    ]
+  },
+  "relevance": "A DID method that supports Service Endpoint updates, see https://w3c.github.io/did-core/#services.",
+  "assessmentTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "type": "method",
+        "propertyRef": "method"
+      },
+      {
+        "heading": "Trait",
+        "type": "boolean",
+        "propertyRef": "trait"
+      },
+      {
+        "heading": "Notes",
+        "type": "note",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "exampleAssessments": [
+    {
+      "id": "",
+      "method": "cheqd",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "iden3",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "key",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "peer",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "web",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webplus",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webs",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webvh",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    }
+  ]
+}

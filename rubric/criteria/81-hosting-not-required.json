@@ -1,0 +1,101 @@
+{
+  "name": "Hosting not required",
+  "id": "https://www.w3.org/TR/did-rubric#criteria-81",
+  "version": "1.0.0",
+  "source": "https://identity.foundation/did-traits/v1.0.0/",
+  "question": {
+    "question": "Does the DID method require hosting on persistent storage?",
+    "instruction": ""
+  },
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "Yes",
+        "meaning": "The DID method supports this trait."
+      },
+      {
+        "label": "No",
+        "meaning": "The DID method does not support this trait."
+      }
+    ]
+  },
+  "relevance": "A DID method whose DID document does not require hosting on persistent storage, at least for the initial DID document. For example: did:key and did:peer.",
+  "assessmentTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "type": "method",
+        "propertyRef": "method"
+      },
+      {
+        "heading": "Trait",
+        "type": "boolean",
+        "propertyRef": "trait"
+      },
+      {
+        "heading": "Notes",
+        "type": "note",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "exampleAssessments": [
+    {
+      "id": "",
+      "method": "cheqd",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "iden3",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "key",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "peer",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "web",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webplus",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webs",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webvh",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    }
+  ]
+}

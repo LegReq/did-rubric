@@ -1,0 +1,101 @@
+{
+  "name": "Cryptographically signed DID Document History",
+  "id": "https://www.w3.org/TR/did-rubric#criteria-79",
+  "version": "1.0.0",
+  "source": "https://identity.foundation/did-traits/v1.0.0/",
+  "question": {
+    "question": "Does the DID method create DIDs with cryptographically signed DID document history?",
+    "instruction": ""
+  },
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "Yes",
+        "meaning": "The DID method supports this trait."
+      },
+      {
+        "label": "No",
+        "meaning": "The DID method does not support this trait."
+      }
+    ]
+  },
+  "relevance": "A DID method's capability to record all modifications to the DID document in an append-only, cryptographically verifiable data structure that prevents retroactive alteration or deletion of historical states.",
+  "assessmentTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "type": "method",
+        "propertyRef": "method"
+      },
+      {
+        "heading": "Trait",
+        "type": "boolean",
+        "propertyRef": "trait"
+      },
+      {
+        "heading": "Notes",
+        "type": "note",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "exampleAssessments": [
+    {
+      "id": "",
+      "method": "cheqd",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "iden3",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "key",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "peer",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "web",
+      "trait": "No",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webplus",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webs",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    },
+    {
+      "id": "",
+      "method": "webvh",
+      "trait": "Yes",
+      "note": "",
+      "evaluationCitation": "#eval-6"
+    }
+  ]
+}
