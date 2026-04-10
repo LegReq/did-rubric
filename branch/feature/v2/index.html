@@ -11,12 +11,15 @@
     class="remove"></script>
   <script src="./tooling/src/render-retired.js"
     class="remove"></script>
+  <script src="./tooling/src/render-evaluations.js"
+    class="remove"></script>
   <script src="./rubric/rubric.js"></script>
   <script src="./rubric/retired-criteria.js"></script>
+  <script src="./rubric/evaluations.js"></script>
   <link rel="stylesheet" href="rubric.css">
 
   <script class='remove'>
-   
+
     // See https://github.com/w3c/respec/wiki/ for how to configure ReSpec
     var respecConfig = {
       // the W3C WG and public mailing list
@@ -44,7 +47,7 @@
 
       // extend the bibliography entries
       localBiblio: ccg.localBiblio,
-      preProcess: [window.renderCategories, window.renderRetired],
+      preProcess: [window.renderCategories, window.renderRetired, window.renderEvaluations],
 
       github: {
         repoURL: "https://github.com/w3c/did-rubric/",
@@ -542,85 +545,9 @@
         that flow into the registry should include a section that
         documents their source
         with an additional row in the table.</p>
-      <table class="simple">
-        <tr>
-          <th>Relative ID</th>
-          <th>Citation</th>
-          <th>Note</th>
-        </tr>
-        <tr id="eval-1">
-          <td>eval-1</td>
-          <td>DID Method Rubric</td>
-          <td>Evaluations written by Joe Andrieu, for this rubric. Not
-            explicitly funded.</td>
-        </tr>
-        <tr id="eval-2">
-          <td>eval-2</td>
-          <td>DID Method Rubric</td>
-          <td>Evaluations written by Daniel Hardman, to illustrate
-            this rubric. Not explicitly funded.</td>
-        </tr>
-        <tr id="eval-3">
-          <td>eval-3</td>
-          <td>VeresOne Rubric Evaluation</td>
-          <td>Funded by Digital Bazaar under DHS SVIP contract
-            70RSAT20T00000029.
-            Available at <a
-              href="https://didevaluations.com/evals/v1.2022.03.01.pdf">https://didevaluations.com/evals/v1.2022.03.01.pdf</a>.
-          </td>
-        </tr>
-        <tr id="eval-4">
-          <td>eval-4</td>
-          <td>DID Web Rubric Evaluation</td>
-          <td>Funded by Digital Bazaar under DHS SVIP contract
-            70RSAT20T00000029.
-            Available at <a
-              href="https://didevaluations.com/evals/web.2022.03.01.pdf">https://didevaluations.com/evals/web.2022.03.01.pdf</a>.
-          </td>
-        </tr>
-        <tr id="eval-5">
-          <td>eval-5</td>
-          <td>DID Ion Rubric Evaluation</td>
-          <td>Funded by Digital Bazaar under DHS SVIP contract
-            70RSAT20T00000029.
-            Available at <a
-              href="https://didevaluations.com/evals/ion.2022.03.01.pdf">https://didevaluations.com/evals/ion.2022.03.01.pdf</a>.
-          </td>
-        </tr>
-      </table>
+      <div id="evaluations-cited"></div>
     </section>
-    <section>
-      <h3>Use Cases Referenced</h3>
-      <table class="simple">
-        <tr>
-          <th>Relative ID</th>
-          <th>Citation</th>
-          <th>Note</th>
-        </tr>
-        <tr id="usecase-1">
-          <td style="width:8em">usecase-1</td>
-          <td>Long term verifiable credentials</td>
-          <td>The use of DIDs as subject
-            identifiers for long term (life-long) verifiable
-            credentials such as earned
-            academic degrees.</td>
-        </tr>
-        <tr id="usecase-2">
-          <td>usecase-2</td>
-          <td>User authentication</td>
-          <td>The use of DIDs for authenticating users
-            for access to system services.</td>
-        </tr>
-        <tr id="usecase-3">
-          <td>usecase-3</td>
-          <td>Verifiable software development</td>
-          <td>The signing of commits by
-            developers and their verification to ensure that source
-            code in a particular
-            git repository is authentic.</td>
-        </tr>
-      </table>
-    </section>
+
     <section>
       <h3>Methods Considered</h3>
       <table class="simple">
@@ -1006,19 +933,16 @@
           change to
           its primary component.
         </li>
-        <li>Use cases, methods, and evaluations cited within a
-          criteria MUST
+        <li>Methods, and evaluations cited within a criteria MUST
           include a local link to a full citation in
-          the relevant citation section: Use Cases Referenced,
-          Methods Evaluated, and Evaluations Cited, respectively.
+          the relevant citation section:
+          Methods Evaluated and Evaluations Cited, respectively.
         </li>
         <li>Rubric criteria and associated metadata in the DID Method
           Rubric Registry MAY be updated or removed at the editors’
           discretion, including the addition or removal of categories
           of
-          metadata such as <em>Use Cases Referenced</em> or
-          <em>Implementations
-            of Note</em>.</li>
+          metadata such as <em>Evaluations Cited</em>.</li>
       </ol>
     </section>
     <section>
@@ -1030,8 +954,7 @@
         relevance,
         examples, and, optionally, a source. In addition, the
         DID Method Rubric maintains a list of cited references: DID
-        methods,
-        use cases, and evaluations. The criteria are
+        methods, and evaluations. The criteria are
         independently identified and versioned (see those sections for
         details) while references cited in the criteria
         themselves link to their full citation in the appropriate
@@ -1304,24 +1227,6 @@
               explain
               why that particular response was chosen.It MAY be blank.
               However, the column MUST be included.</li>
-            <li>The Notes entry MUST specify a distinct use case
-              listed
-              explicitly in this registry in the Use Cases Referenced
-              section, using the label from that section.
-              <ol type="a">
-                <li>
-                  The use case label MUST be delimited by square
-                  brackets.
-                </li>
-                <li>
-                  The label text itself must be a hyperlink to the
-                  entry
-                  in the Use Cases Referenced section, for example
-                  [UC.1]
-                  where “UC.1” links to “#useCase-1” in the current
-                  document.
-                </li>
-              </ol>
             <li>
               The Notes entry MUST identify a published evaluation by
               reference to an entry in the Evaluations Cited section
@@ -1335,8 +1240,8 @@
                 <li>
                   The label text itself must be a hyperlink to the
                   entry
-                  in the Evaluations Cited section, for example [E.1]
-                  where “E.1” links to “#eval-1” in the current
+                  in the Evaluations Cited section, for example [eval-1]
+                  where “eval-1” will be linked by the renderer links to “#eval-1” in the current
                   document.
                 </li>
               </ol>
@@ -1488,74 +1393,31 @@
           evaluations. It is expected that such evaluations are
           developed and published elsewhere, in support of various
           methods and use cases. Only those evaluations cited as
-          Example Evaluations in current criteria will be listed.</p>
-        <p>Entries in this section MUST include:</p>
+          Example Assessments in current criteria will be listed.
+        </p>
+        <p>Evaluation entries defined by creating a JSON file under the
+          <code>rubric/evaluationCitations</code> folder in the
+          <a href="https://github.com/w3c/did-rubric">github repository</a>.
+          This JSON file MUST include:</p>
         <ol>
-          <li><strong>Evaluators</strong> The name and contact
-            information for the parties accepting responsibility for
-            that
-            evaluation. It MAY include each evaluator’s affiliation at
-            the
-            time of the evaluation.
+          <li><strong>ID</strong> A identifier for the
+            evaluation, that can be used as a relative reference
+            to cite the evaluation throughout the DID Method rubric.
+          </li>
+          <li><strong>Title</strong> A short, descriptive title for the
+            evaluation.</li>
+          <li><strong>Evaluators</strong> The names of the individuals
+            accepting responsibility for the evaluation.
           </li>
           <li><strong>Evaluation Date</strong> The performance date of
             the evaluation.
           </li>
-          <li><strong>Funding</strong> The source, if any, of funds
-            explicitly paid to perform the evaluation.
-          </li>
-          <li><strong>Use Cases</strong> One or more use cases listed
-            Use Cases Referenced section of this registry, using the
-            label
-            from that section.
-            <ol type="a">
-              <li>The use case label MUST be delimited by square
-                brackets.</ li>
-              <li>The label text itself must be a hyperlink to the
-                entry in
-                the Use Cases Referenced section, for example [UC.1]
-                where
-                “UC.1” links to “#useCase-1” in the current document.
-              </li>
-            </ol>
-          </li>
-          <li><strong>Report URL</strong> A permalink where readers
-            can read or download the published evaluation
+          <li><strong>Evaluation URL</strong> A permalink where readers
+            can read or download the published evaluation for additional details including use cases, funding, and contact information.
           </li>
         </ol>
+
       </section> <!-- Evaluations Cited -->
-      <section>
-        <h3>Use Cases Referenced</h3>
-        <p>Every use case cited in the Notes entry in an evaluation
-          MUST link to an entry in this section.</p>
-        <p>A collection of the use cases referenced by different
-          evaluations. This is not a comprehensive list (see the DID
-          Use Cases and Requirements document for a more detailed
-          discussion). Rather, it is an aggregation of all the use
-          cases cited by example evaluations in current criteria.</p>
-        <ol>
-          <li>This section MUST list all use cases cited by any
-            example
-            evaluation for current criteria.
-          </li>
-          <li>Use cases must specify a label for use by citations
-            within
-            the registry.
-          </li>
-          <li>The label must be of the form UC.x where “x” is a
-            unique,
-            incremental number within the Use Cases Referenced
-            section.
-          </li>
-          <li>Each use case must have an unique name and an
-            illustrative
-            description of a value-creating use of DIDs.
-          </li>
-          <li>Use cases SHOULD identify unique contexts or situations
-            not covered by other use cases in the registry.
-          </li>
-        </ol>
-      </section> <!-- Use Cases Referenced -->
       <section>
         <h3>Methods Evaluated</h3>
         <p>Every DID method cited in the Example Evaluations MUST link
