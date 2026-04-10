@@ -9,9 +9,12 @@
   <script class='remove' src="./common.js"></script>
   <script src="./tooling/src/render-criteria.js"
     class="remove"></script>
+  <script src="./tooling/src/render-retired.js"
+    class="remove"></script>
   <script src="./tooling/src/render-evaluations.js"
     class="remove"></script>
   <script src="./rubric/rubric.js"></script>
+  <script src="./rubric/retired-criteria.js"></script>
   <script src="./rubric/evaluations.js"></script>
   <link rel="stylesheet" href="rubric.css">
 
@@ -44,7 +47,7 @@
 
       // extend the bibliography entries
       localBiblio: ccg.localBiblio,
-      preProcess: [window.renderCategories, window.renderEvaluations],
+      preProcess: [window.renderCategories, window.renderRetired, window.renderEvaluations],
 
       github: {
         repoURL: "https://github.com/w3c/did-rubric/",
@@ -1393,7 +1396,7 @@
           Example Assessments in current criteria will be listed.
         </p>
         <p>Evaluation entries defined by creating a JSON file under the
-          <code>rubric/evaluations</code> folder in the
+          <code>rubric/evaluationCitations</code> folder in the
           <a href="https://github.com/w3c/did-rubric">github repository</a>.
           This JSON file MUST include:</p>
         <ol>
@@ -1517,6 +1520,13 @@
 
 
   </section> <!-- criteria -->
+  <section id="retired">
+    <h2>Retired criteria</h2>
+<p>The following criteria have been retired. We link to their last canonical publication for historical provenance. Many of these criteria have evolved into newer criteria, others have simply been removed from this Rubric for lack of completeness, currency and/or relevance.
+</p>
+
+  </section>
+
   <section>
     <h2>Conclusion</h2>
     <p>
